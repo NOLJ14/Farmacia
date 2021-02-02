@@ -1,0 +1,19 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+	<meta charset="UTF-8"> 
+	<title>Product Images</title> 
+
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+</head> 
+<body> 
+
+	{% for Product in product_images %} 
+			<div> 
+                {{ Product.idProducto }}
+                <img src="{{ Product.productoMainImg.url }}" style="width: 100px; margin-right: 10px;" /> 
+			</div> 
+	{% endfor %} 
+
+</body> 
+</html> 
